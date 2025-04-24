@@ -10,18 +10,19 @@
     <div class="login">
         <div class="form-container">
             <img class="logo" src="./assets/img/logos/logo_yard_sale.svg" alt="logo">
-            <h1 class="title">Create a new password</h1>
-            <p class="subtitle">Enter a new password for you account</p>
 
             <form action="/" class="form">
+                <label for="email" class="label">Email address</label>
+                <input class="input input-password" type="email" name="" id="email" placeholder="platzi@example.com">
+                
                 <label for="password" class="label">Password</label>
                 <input class="input input-password" type="password" name="" id="password" placeholder="*********">
-                
-                <label for="new-password" class="label">New Password</label>
-                <input class="input input-password" type="new-password" name="" id="password" placeholder="*********">
 
-                <input type="submit" value="Confirm" class="primary-button login-button">
+                <input type="submit" value="Log in" class="primary-button login-button">
+                <a href="/">Forgot my password</a>
             </form>
+
+            <button class="secondary-button signup-button">Sign up</button>
         </div>
     </div>
 </body>
