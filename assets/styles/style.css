@@ -226,28 +226,28 @@ nav {
 }
 
 .navbar-left {
-    display: flex;
+  display: flex;
 }
 .navbar-left ul {
-    margin-left: 12px;
+  margin-left: 12px;
 }
 .navbar-left {
-    display: flex;
-    margin-left: 12px;
+  display: flex;
+  margin-left: 12px;
 }
 
 .navbar-left ul li a,
 .navbar-right ul li a {
-    text-decoration: none;
-    color: var(--very-light-pink);
-    border: 1px solid var(--white);
-    padding: 8px;
-    border-radius: 8px;
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
 }
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
-    color: var(--hospital-green);
-    border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+  border: 1px solid var(--hospital-green);
 }
 
 .navbar-email {
@@ -273,6 +273,69 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*Clase 20*/
+
+.product-detail {
+  width: 360px;
+  padding-bottom: 24px;
+  position: absolute;
+  right: 0;
+}
+
+.product-detail-close {
+  background: var(--white);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.product-detail-close:hover {
+  cursor: pointer;
+}
+
+.product-detail > img:nth-child(2) {
+  width: 100px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+
+.product-info {
+  margin: 24px 24px 0 24px;
+}
+
+.product-info p:nth-child(1) {
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.product-info p:nth-child(2) {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.product-info p:nth-child(3) {
+  color: var(--very-light-pink);
+  font-size: var(--sm);
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards-container {
@@ -472,6 +535,10 @@ nav {
 }
 
 @media (max-width: 640px) {
+  .product-detail {
+    width: 100%;
+  }
+
   .logo {
     display: block;
   }
@@ -508,7 +575,8 @@ nav {
   .navbar-left {
     display: none;
   }
-  .navbar-email{
+  .navbar-email {
     display: none;
   }
+  
 }
